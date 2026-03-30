@@ -80,9 +80,7 @@ class lcp:
             # self.M = np.zeros( (n,n), dtype=fractions.Fraction)
             # self.d = np.zeros( (n), dtype=fractions.Fraction)
             # self.q = np.zeros( (n), dtype=fractions.Fraction)
-            self.M = [[]] * n
-            for i in range(n):
-                self.M[i] = [0] * n
+            self.M = [[0] * n for _ in range(n)]
             self.q = [0] * n
             self.d = [0] * n
             needfracs = n * n + 2 * n
