@@ -183,11 +183,6 @@ class payoffmatrix:
 
 
 class bimatrix:
-    # create A,B given m,n
-    def __init__(self, m, n):
-        self.A = payoffmatrix(m, n)
-        self.B = payoffmatrix(m, n)
-
     # create A,B from file
     def __init__(self, filename):
         lines = utils.stripcomments(filename)
